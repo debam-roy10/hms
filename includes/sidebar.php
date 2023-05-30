@@ -8,13 +8,13 @@
             </a>
             </li>
             <li class="nav-item">
-            <a class="nav-link" href="#">
+            <a class="nav-link" href="doctors.php">
                 <span data-feather="file"></span>
                 Doctors
             </a>
             </li>
             <li class="nav-item">
-            <a class="nav-link" href="#">
+            <a class="nav-link" href="patient.php">
                 <span data-feather="shopping-cart"></span>
                 Patients
             </a>
