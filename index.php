@@ -4,46 +4,53 @@ include "includes/header.php";
 include "includes/sidebar.php";
 ?>
 <main class="col-md-9 ms-sm-auto col-lg-10 px-md-4">
+    <!-- ====================== heading ====================== -->
     <div
         class="d-flex justify-content-between flex-wrap flex-md-nowrap align-items-center pt-3 pb-2 mb-3 border-bottom">
         <h1 class="h2">Dashboard</h1>
     </div>
+
+    <!-- ====================== cards ====================== -->
     <div class="row">
         <div class="col-md-4 col-xl-3">
             <div class="card1 bg-c-blue order-card">
                 <div class="card-block">
-                    <h6 class="m-b-20">Appointments</h6>
-                    <h2 class="text-right"><i class="fa fa-cart-plus f-left"></i><span>486</span></h2>
+                    <h5 class="m-b-20">Appointments</h5>
+                    <h6 class="m-b-20">Current Week</h6>
+                    <h2 class="text-right"><i class="fa fa-cart-plus f-left"></i><span>159</span></h2>
                 </div>
             </div>
         </div>
         <div class="col-md-4 col-xl-3">
             <div class="card1 bg-c-blue order-card">
                 <div class="card-block">
-                    <h6 class="m-b-20">Doctors</h6>
-                    <h2 class="text-right"><i class="fa fa-rocket f-left"></i><span>486</span></h2>
+                    <h5 class="m-b-20">Doctors</h5>
+                    <h6 class="m-b-20">Joined this week</h6>
+                    <h2 class="text-right"><i class="fa fa-rocket f-left"></i><span>18</span></h2>
                 </div>
             </div>
         </div>
         <div class="col-md-4 col-xl-3">
             <div class="card1 bg-c-blue order-card">
                 <div class="card-block">
-                    <h6 class="m-b-20">Staffs</h6>
-                    <h2 class="text-right"><i class="fa fa-refresh f-left"></i><span>486</span></h2>
+                    <h5 class="m-b-20">Staffs</h5>
+                    <h6 class="m-b-20">Joined this week</h6>
+                    <h2 class="text-right"><i class="fa fa-refresh f-left"></i><span>42</span></h2>
                 </div>
             </div>
         </div>
         <div class="col-md-4 col-xl-3">
             <div class="card1 bg-c-blue order-card">
                 <div class="card-block">
-                    <h6 class="m-b-20">Patients</h6>
-                    <h2 class="text-right"><i class="fa fa-credit-card1 f-left"></i><span>486</span></h2>
+                    <h5 class="m-b-20">Patients</h5>
+                    <h6 class="m-b-20">Currently Admitted</h6>
+                    <h2 class="text-right"><i class="fa fa-credit-card1 f-left"></i><span>256</span></h2>
                 </div>
             </div>
         </div>
     </div>
 
-
+    <!-- ====================== appointments table ====================== -->
     <div class="row">
         <div class="col">
             <div class="card">
@@ -106,15 +113,20 @@ include "includes/sidebar.php";
         </div>
     </div>
 
-    <div class="row">
-        <div class="chart-container">
-            <canvas class="chart col-md-6" id="myChart" style="max-width:400px; max-height:400px"></canvas>
+    <!-- ====================== charts ====================== -->
 
-            <canvas class="col-md-6" id="myChart2" style="max-width:500px; max-height:400px"></canvas>
+    <div class="charts row">
+        <div class="col d-flex flex-column">
+            <h4 class="text-center">Current Ratio</h4>
+            <canvas class="chart mt-2" id="myChart" style="max-height:400px;"></canvas>
+        </div>
+        <div class="col d-flex flex-column">
+            <h4 class="text-center">Patients Admission Curve</h4>
+            <canvas class="mt-4" id="myChart2" style="max-height:400px;"></canvas>
         </div>
     </div>
 
-
+    <!-- ====================== doctors list table ====================== -->
     <div class="row">
         <div class="col">
             <div class="card">
@@ -176,6 +188,8 @@ include "includes/sidebar.php";
             </div>
         </div>
     </div>
+
+    <!-- ====================== dashboard ends ====================== -->
 
 </main>
 <?php

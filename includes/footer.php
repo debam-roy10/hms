@@ -111,18 +111,19 @@
 <script src="assets/js/datatables.min.js"></script>
 <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
 
-<script>
 
+<!-- ============================= chart-script ============================= -->
+<script>
 const data = {
   labels: [
-    'staff',
-    'patient',
-    'doctors',
-    'others'
+    'Staffs',
+    'Patients',
+    'Doctors',
+    'Appointments'
   ],
   datasets: [{
-    label: 'My First Dataset',
-    data: [40, 100, 50, 10],
+    label: 'HMS_Database',
+    data: [42, 256, 18, 159],
     backgroundColor: [
       'rgb(255, 99, 132)',
       'rgb(54, 162, 235)',
@@ -145,12 +146,12 @@ var myChart = new Chart(
 </script>
 
 <script>
-const labels2 = ['mon','tue','wed','thu','fri','sat','sun'];
+const labels2 = ['Mon','Tue','Wed','Thu','Fri','Sat','Sun'];
 const data2 = {
   labels: labels2,
   datasets: [{
-    label: 'Patients per day',
-    data: [65, 59, 80, 81, 56, 55, 40],
+    label: 'Patients / day (last week) ',
+    data: [45, 29, 70, 81, 56, 55, 20],
     fill: false,
     borderColor: 'rgb(75, 192, 192)',
     tension: 0.1
@@ -167,6 +168,8 @@ var myChart2 = new Chart(
     config2
   );
 </script>
+
+<!-- ============================= chart-script end ============================= -->
 
 </body>
 

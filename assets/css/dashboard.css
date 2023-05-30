@@ -164,11 +164,9 @@ body {
     float: right;
 }
 
-.chart-container{
-  display: flex;
-  justify-content: space-evenly;
-  margin-top: 3rem;
-
+.charts{
+margin-top: 3rem;
+margin-bottom: 3.5rem;
 }
 
 .chart:hover{
